@@ -1,0 +1,671 @@
+/*Este es el reset inicial*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#encabezado{
+	width: 100%;
+	height: 750px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/hero3V.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+}
+
+#logo {
+	width: 120px; 
+	height: 100px; 
+	margin-left: 50px;
+}
+
+#menu {
+	list-style-type: none;
+	display: flex;
+	gap: 20px;
+	justify-content: left;
+	flex-grow: 1;
+	margin-left: 30px;
+}
+
+.elementoMenu > a{
+	color: whitesmoke;
+	font-family: "Rubik Dirt", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+	text-decoration: none;
+	font-size: 18px;
+	transition: color 0.3s ease, transform 0.3s ease;
+	transition-duration: 0.5s;
+}
+
+.elementoMenu a:hover {
+	color: purple; 
+	transform: scale(1.1);
+}
+
+/*Aqui empieza el submenu*/
+#submenu {
+	width: auto;
+	height: 150px;
+	list-style: none;
+	position: absolute;
+	top:90px;
+	z-index: 1;
+	display: none;
+}
+
+.elemSubmenu {
+	width: 100%;
+	height: 50px;
+	line-break: 50px;
+}
+
+.elemSubmenu >a {
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	transition-property: color;
+	transition-duration: 1.5s;
+}
+
+.elemSubmenu >a:hover {
+	color: purple;
+}
+
+.elementoMenu:hover #submenu {
+	display: block;
+	transition: all 0.3s ease;
+}
+
+/*Aqui termina el submenu*/
+
+nav {
+	width: 100%; 
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	transition-property: top;
+	transition-duration: 0.75s;
+}
+
+
+/*Aqui empieza el css de la seccion carrusel*/
+
+#carr{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carrusel{
+	width: 950px;
+	height: 500px;
+	background-color: aliceblue;
+	overflow: hidden;
+	border-radius: 10px
+}
+
+.carrusel ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;	
+}
+
+.carrusel li{
+	width: 100%;
+	list-style: none;
+	position: relative;
+}
+
+.imagenCarrusel img{
+	width: 100%;
+	height: auto;
+}
+
+.texto {
+	position: absolute;
+	text-align: center;
+	padding: 0 250px;
+	top: 250px;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.texto h2{
+	font-size: 45px;
+	margin-bottom: 35px;
+}
+
+.carrusel img{
+	width: 100%;
+	height: auto;
+}
+
+@keyframes slide {
+	0% { margin-left: 0; }
+	20% { margin-left: 0; }
+
+	25% { margin-left: -100%; }
+	45% { margin-left: -100%; }
+
+	50% { margin-left: -200%; }
+	70% { margin-left: -200%; }
+
+	75% { margin-left: -300%; }
+	100% { margin-left: -300%; }
+}
+
+@media(max-width:991px) {
+	
+	body {
+		padding: 30px;
+	}
+
+	.carrusel {
+		width: 100%;
+	}
+
+	.texto{
+		top: 50px;
+		padding: 0 25px;
+	}
+
+	.texto h2{
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	.texto p {
+		font-size: 15px;
+	}
+}
+
+/*Aqui termina el carrusel*/
+
+/*aqui empieza el css de la seccion heroes*/
+
+#heroes {
+	width: 100%;
+	height: 1200px;
+	/*background-color: orange;*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/hero4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.tituloSeccion{
+
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 90px;
+	font-family: "Jaro", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: white;
+
+  	animation-name: animacion;
+  	animation-duration: 4s;
+}
+
+@keyframes animacion{
+	0% {opacity:0;}
+	75% {opacity:1;}
+	100% {opacity:1;}
+}
+
+#contenedorEtiquetasPestanas{
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	margin-top: 50px;
+}
+
+.etiquetaPestanas{
+	
+	width: 33.33%;
+	font-size: 2rem;
+	color: white;
+	float: left;
+	text-align: center;
+}
+
+.pestanaActiva{
+	color:#6D077F;
+	text-decoration: underline;
+}
+
+.contenedorHeroes{
+
+	margin-top: 60px;
+	width: 1275px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+
+}
+
+.heroe{
+	width: calc(33.33% - 75px);
+	height: calc(50% - 75px);
+	background-color: #6D077F;
+	border-style: solid;
+	float: left;
+	margin-right: 37.5px;
+	margin-left: 37.5px;
+	margin-top: 37.5px;
+	margin-bottom: 37.5px;
+	border-radius: 10px
+}
+
+.imagenHeroe {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+}
+
+.imagenHeroe img {
+	width: 100%;
+	height: auto;
+	transition-property: transform;
+	transition-duration: 0.3s;
+}
+
+.imagenHeroe img:hover {
+	transform: scale(1.2,1.2);
+}
+
+.nombreHeroe{
+	text-align: center;
+	color: white;
+	margin-top: 12px;
+	font-family: "Jaro", sans-serif;
+	font-size: 1.5rem;
+}
+
+/*Aqui termina el css de la seccion de heroes*/
+
+/*Aqui Empieza el css de la seccion de galeria*/
+
+#galeria{
+	width: 100%;
+	height: 950px;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/hero3V.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.tituloSeccion3{
+
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+	font-family: "Jaro", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+#contenedorGaleria1{
+	width: 1210px;
+	height: 525px;
+	margin-top: 95px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.imgGaleria {
+	width: calc(25% - 10px);
+	height: calc(33.33% - 10px);
+	background-color: orange;
+	border-style: solid;
+	float: left;
+	margin: 5px;
+}
+
+.imgGaleria img {
+	width: 100%;
+	height: 100%;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.imgGaleria img:hover {
+	transform: scale(1.05);
+}
+
+/*Modal de lightbox*/
+
+#modalLightboxG {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	display: none;
+	top: 0px;
+	z-index: 5;
+}
+
+#imageToShow {
+	width: 40vw;
+	height: auto;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	
+}
+
+.imageLightbox{
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+}
+
+.lbButtons{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	background-color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+
+}
+
+.lbButtons:hover{
+	border-color: #6D077F;
+}
+
+.lbbRight{
+	right: 30px;
+}
+
+.lbbLeft{
+	Left: 30px;
+}
+
+.lbButtons i{
+	font-size: 1rem;
+	color: white;
+}
+
+.lbButtons i:hover{
+	color: #6D077F;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.closeBtn:hover {
+    color: red;
+}
+
+/*Aqui termina el css de la seccion de galeria*/
+
+/*Aqui empieza el css de la seccion de registrate*/
+
+#registrate {
+	width: 100%;
+	height: 700px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/hero4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+#contenedorRegistrate{
+	width: 1100px;
+	height: 515px;
+	background-color: rgba(255, 0, 170, 0.4);
+	margin-top: 95px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px
+	
+}
+
+.tituloSeccion2{
+
+	font-size: 3rem;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+	font-family: "Jaro", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: white;
+}
+
+#video {
+	width: 100%;
+	height: 100%;
+	object-fit: contain
+}
+
+.contenedorContacto{
+	width: 1000px;
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+
+.colRegistrate{
+
+	width: 50%;
+	height: 400px;
+	background: linear-gradient(135deg, rgba(20,20,60,0.9), rgba(70,0,90,0.8));
+	border-style: solid;
+	float: left;
+}
+
+#form{
+	display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+#textoRegistrate{
+	font-size: 1.8rem;
+    text-align: center;
+    width: 100%; 
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: "Jaro", sans-serif;
+}
+
+input{
+	display: block;
+	height: 40px;
+	margin-top: 25px;
+	width: 300px;
+}
+
+/*Aqui creamos todo el estilo dinamico y grafico del boton*/
+#botonEnviar {
+    width: 200px; 
+    height: 40px;
+    background-color: #FF3CDB;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#botonEnviar:hover {
+    background-color: #6D077F;
+    transform: scale(1.05);
+}
+
+#botonEnviar:active {
+    background-color: #6D077F;
+    transform: scale(0.98);
+}
+
+/*Modal de confirmacion de registro*/
+
+#modalRegistro {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	display: none;
+	z-index: 5;
+}
+
+#modaleBoxR {
+	width: 680px;
+	height: 400px;
+	background-color: lightgrey;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 50px;
+	text-align: center;
+	border-radius: 25px;
+}
+
+#modaleBoxR>h1{
+	font-size: 3rem;
+	font-family: "Jaro", sans-serif;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+#modaleBoxR>p{
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: "Jaro", sans-serif;
+	margin-bottom: 40px;
+}
+
+#modaleBoxR> button {
+	font-family: "Jaro", sans-serif;
+	font-size: 2.5rem;
+	padding: 10px 15px;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+}
+
+#modaleBoxR> button:hover {
+	color: black;
+	background-color: #6D077F;
+}
+
+
+
+/*Aqui termina el modal de confirmacion de registro*/
+
+form input,
+form textarea {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: "Jaro", sans-serif;
+    }
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #ccc;
+    
+ }
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/*aqui termina la seccion registrate*/
+
+/*Aqui empieza el pie*/
+
+#pie{
+	width: 100%;
+	height: 100px;
+	background-color: #6D077F;
+}
+
+footer {
+    background-color: #111;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redesSociales a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.redesSociales a:hover {
+    color: #8B0ADB; /* Cambia el color al pasar el cursor */
+}
+
+

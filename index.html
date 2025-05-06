@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gamers</title>
+
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="CSS/Style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="JS/Scripts.js"></script>
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+	<script src="https://kit.fontawesome.com/5a518083e4.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<header id="encabezado">
+	<nav id="navbar">
+		<div id="logoContenedor">
+			<div id="logo">
+				<img src="Media/nlogo.png" alt="logo">
+			</div>
+		</div>
+		<ul id="menu">
+			<li class="elementoMenu"><a href="">Inicio</a></li>
+			<li class="elementoMenu"><a href="#heroes">Héroes</a>
+				<ul id="submenu">
+					<li class="elemSubmenu"><a href="#heroesMago">Mago</a></li>
+					<li class="elemSubmenu"><a href="#heroesTanque">Tanque</a></li>
+					<li class="elemSubmenu"><a href="#heroesTirador">Tirador</a></li>
+				</ul>
+
+			</li>
+			<li class="elementoMenu"><a href="#galeria">Galeria</a></li>
+			<li class="elementoMenu"><a href="#registrate">Contáctanos</a></li>
+		</ul>
+	</nav>
+
+
+<section id="carr" >
+	<div class="carrusel" data-aos="fade-right">
+		<ul>
+			<li>
+				<div class="imagenCarrusel">
+					<img src="Media/imagenCarrusel1.jpg" alt="Imagen1"></div>
+				<div class="texto">
+					<h2>Diferentes heroes según tu rol</h2>
+					<p>Explora los diferentes roles para vencer a tu enemigo</p>
+				</div>	
+			</li>
+			<li>
+				<div class="imagenCarrusel">
+					<img src="Media/imagenCarrusel2.jpg" alt="Imagen2">
+				</div>
+				<div class="texto">
+					<h2>Conoce al nuevo héroe</h2>
+					<p>La muy esperada heroína luchadora/de apoyo, Kalea, hará finalmente su debut en el servidor original de la MLBB este mes de marzo.</p>
+				</div>	
+			</li>
+			<li>
+				<div class="imagenCarrusel">
+					<img src="Media/imagenCarrusel3.jpg" alt="Imagen3">
+				</div>
+				<div class="texto">
+					<h2>Nuevo evento disponible</h2>
+					<p>Completa las diferentes tareas en el campo de batalla para conseguir promo diamantes y canjearlos por tu apariencia preferida</p>
+				</div>	
+			</li>
+			<li>
+				<div class="imagenCarrusel">
+					<img src="Media/imagenCarrusel3.jpg" alt="Imagen3">
+				</div>
+				<div class="texto">
+					<h2>Nuevo evento disponible</h2>
+					<p>Completa las diferentes tareas en el campo de batalla para conseguir promo diamantes y canjearlos por tu apariencia preferida</p>
+				</div>	
+			</li>
+		</ul>
+	</div>
+</section>
+</header>
+
+<section id="heroes">
+
+	<h2 class="tituloSeccion">Listado de héroes según su clase</h2>
+
+	<div id="contenedorEtiquetasPestanas">
+
+		<p class="etiquetaPestanas pestanaActiva" onclick="marcarPestana('heroesMago')">Mago</p>
+		<p class="etiquetaPestanas" onclick="marcarPestana('heroesTanque')">Tanque</p>
+		<p class="etiquetaPestanas" onclick="marcarPestana('heroesTirador')">Tirador</p>
+
+	</div>
+
+	<div class="contenedorHeroes" id="heroesMago">
+		
+		<div class="heroe" data-aos="fade-right">
+			<div class="imagenHeroe">
+				<img src="Media/newCecilion.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Cecilion</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe" data-aos="fade-down">
+				<img src="Media/Pharsa.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Pharsa</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe" data-aos="fade-left">
+				<img src="Media/Vexana.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Vexana</p>
+		</div>
+
+		<div class="heroe" data-aos="fade-right">
+			<div class="imagenHeroe">
+				<img src="Media/Aurora.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Aurora</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe" data-aos="fade-up">
+				<img src="Media/nana.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Nana</p>
+		</div>
+		
+		<div class="heroe">
+			<div class="imagenHeroe" data-aos="fade-left">
+				<img src="Media/lunox.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Lunox</p>
+		</div>
+	</div>
+
+	<div class="contenedorHeroes" id="heroesTanque">
+		
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/tigreal.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Tigreal</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/franco.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Franco</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/Hylos.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Hylos</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/carmilla.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Carmilla</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/jhonson.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Jhonson</p>
+		</div>
+		
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/chip.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Chip</p>
+		</div>
+	</div>
+
+	<div class="contenedorHeroes" id="heroesTirador">
+		
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/miya.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Miya</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/beatrix.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Beatrix</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/moskov.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Moskov</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/hanabi.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Hanabi</p>
+		</div>
+
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/karrie.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Karrie</p>
+		</div>
+		
+		<div class="heroe">
+			<div class="imagenHeroe">
+				<img src="Media/clint.jpg" alt="">
+			</div>
+			<p class="nombreHeroe">Clint</p>
+		</div>
+	</div>
+
+</section>
+
+<section id="galeria">
+
+	<h2 class="tituloSeccion3" >Conoce las ultimas novedades</h2>
+
+	<div id="contenedorGaleria1">
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria1.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria2.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria3.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria4.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria5.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria5.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria6.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria7.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria8.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria9.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria10.jpg" alt="">
+		</div>
+		<div class="imgGaleria" onclick="modalLightboxG(this)">
+			<img src="Media/galeria11.jpg" alt="">
+		</div>
+	</div>
+
+	<div id="modalLightboxG">
+
+		<button class="closeBtn" onclick="closeModal()">X</button>
+		<div id="imageToShow">
+		</div>
+		<button class="lbButtons lbbRight" onclick="nextImgGal()"><i class="fa-solid fa-angle-right"></i></button>
+
+		<button class="lbButtons lbbLeft" onclick="prevImgGal()"><i class="fa-solid fa-angle-left"></i></button>
+	</div>
+	
+</section>
+
+<section id="registrate">
+
+	<div id="contenedorRegistrate">
+
+		<h2 class="tituloSeccion2">Mantente en contácto con nosostros</h2>
+
+		<div class="contenedorContacto">
+			<div class="colRegistrate">
+				<video src="Media/Video.mp4" id="video" controls muted autoplay></video>
+			</div>
+			<div class="colRegistrate">
+
+				<form action="" id="form">
+					<p id="textoRegistrate">Registrate</p>
+
+					<input id="formNombre" type="text" name="nombre" placeholder="Nombre:" required>
+
+					<input id="formApellidos" type="text" name="apellidos" placeholder="Apellidos:" required>
+
+					<input id="formEmail" type="email" name="email" placeholder="Email:" required>
+
+					<input id="formRol" type="text" name="rol" placeholder="Rol:">
+
+					<input id="botonEnviar" onclick="modalRegistro()" value="Enviar" placeholder="enviar" required>
+				</form>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Modal de registro -->
+
+	<div id="modalRegistro">
+		<div id="modaleBoxR">
+			<h1>Te has registrado correctamente</h1>
+			<p id="mensajeRegistro"></p>
+			<button onclick="cerrarMBR()">Cerrar</button>
+		</div>
+	</div>
+
+</section>
+
+<footer id="pie">
+
+    <div class="redesSociales">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+	
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
